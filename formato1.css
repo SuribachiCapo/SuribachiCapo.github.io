@@ -1,0 +1,234 @@
+body {
+    background-color: hwb(212 24% 5%);
+}
+
+
+/*Botones referencia laboral */
+#ref1, #ref2, #ref3 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    width: 8%;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+#ref1 {
+    position: absolute;
+    left: 500px;
+    top: 670px;}
+#ref2 {
+    position: absolute;
+    left: 500px;
+    top: 770px;}
+#ref3 {
+    position: absolute;
+    left: 500px;
+    top: 870px;}
+
+/* El elemento demo toma el valor de ref1, ref2 o ref3, definido en el archivo JS. La idea
+es que al pulsar por la busqueda de referencias se muestre el elemento demo con el
+valor ref que corresponda.
+Puedo mostrar el contenido de cada referencia, pero no pude descubrir como hacer para que desaparezca
+luego de leida. Creo que tendría que explorar por el lado de las pop ups*/  
+    
+    #demo{
+        color:hwb(307 0% 96%);
+        border:rgb(1, 7, 11);
+        padding: 10 px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        top: 650px;
+        left: 700px;
+        cursor: pointer;
+    
+    }
+
+#encabezado1 {
+    color:hsl(22, 72%, 45%);
+    background-color: rgb(0, 255, 251);
+    height: 80px;
+    width: 540px;
+    font-size:40;
+    border:3px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position:static;
+    
+}
+
+#perfilprof {
+    position: static;
+    right: 75 px;
+    top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color:  #d1dee7;
+    }
+
+/*me di cuenta de que los formatos de los elementos, una vez individualizados, los puedo modificar
+ubicandolos en el archivo css. Al principio los puse en la pagina principal en el head, style. Pero
+la pagina se iba agrandando sin necesidad. Ahora defino los formatos de cada elemento en el
+archivo css. 
+Para individualizar cada elemento, le puse el hashtag seguido de una palabra que identifique el
+contenido.
+Estoy teniendo dificultades con la ubicación de cada elemento en la pantalla. Estoy trabajando con
+la propuedad position, pero no termino de entender el funcionamiento cuando la defino como
+relative, static, absolute o ...*/
+
+
+/* esta caja contiene los datos del perfil profesional*/
+#perfilprofesional {
+    text-align: justify;
+    color:  #d1dee7;
+    height: 150px;
+    width: 25%; 
+    background-color: #136d9d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;    
+    border: 15px solid #6379b1;
+    padding: 30px;
+    margin: 20px;
+    position: absolute;
+    top: 75px;
+    left: 450px;
+}
+
+/* esta caja contiene el formato de los intereses profesionales*/
+#INTERESES {
+    text-align: justify;
+    color:#d1dee7;
+    height: 150px;
+    width: 25%; 
+    background-color: #136d9d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 15px solid #6379b1;
+    padding: 30px;
+    margin: 20px;
+    position: absolute;
+    top: 75px;
+    left: 940px;
+}
+
+/* Encabezado EXPERIENCIA PROFESIONAL*/
+#experiencia {
+    text-align:center;
+    color: #c5c3e3;
+    height: 30px;
+    width: 35%; 
+    background-color: #136d9d;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 15px solid #6379b1;
+    padding: 25px;
+    margin: auto;
+    position:absolute;
+    bottom: 170px;
+    left: 35px;
+    
+}
+
+#concursos {
+    text-align:center;
+    color: #c5c3e3;
+    height: 30px;
+    width: 35%; 
+    background-color: #136d9d;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 15px solid #6379b1;
+    padding: 25px;
+    margin: auto;
+    position:absolute;
+    bottom: 170px;
+    left: 735px;
+}
+
+#Experiencia_contenido {
+    text-align: justify;
+    color: rgb(1, 7, 11);
+    height: 100px;
+    width: 45%; 
+    background-color: darkslategrey;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 15px solid green;
+    padding: 45px;
+    margin: 20px;
+    position: absolute;
+    top: 530px;
+    left: 500px;
+}
+
+/*El elemento ol representa una lista de elementos, donde los elementos se ordenaron intencionalmente, 
+de modo que cambiar el orden cambiaría el significado del documento*/
+
+ol {
+    background: #99e9ff;
+    padding: 10px;
+}
+
+ol li {
+    position:relative;
+    top: 200px;
+    left: 100px;
+    background-color:#309ae0;
+    color: rgb(36, 14, 234);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    width: 20%;
+    height: 20px;
+    margin:auto;
+    text-align:justify;
+    border: 5px solid hsl(241, 66%, 46%);
+    padding: 25px;
+    margin: 20px;
+    
+
+    }
+
+
+h1 {
+    color: rgb(137, 135, 181);
+    background-color: rgb(0, 255, 251);
+    font-size:40;
+    border:3px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2 {
+        color:rgb(210, 206, 224);
+        font-family: 'Times New Roman', Times, serif;
+        border-bottom: 0em;
+}
+
+div {
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+  }
+
+h3 {
+    color:rgb(65, 8, 234)
+    background-color: rgb(0, 255, 251);
+    font-size:40;
+    border:3px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+
+
+
+    
